@@ -1,0 +1,48 @@
+﻿<Window x:Class="WordPressMover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WordPress Mover" Height="650" Width="803">
+    <Grid>
+        <TextBlock Margin="10,10,10,0" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" Height="78" Background="#FFD3FBCF"><Run Text="WordPress Mover prepares a wordpress database backup file when you need to move your Wordpress installation to a different Domain. It searches for domain name texts in the backup file and changes them to the new domain. This is"/><Run Text="n't"/><Run Text=" possible by simply doing a search-and-replace, because several wordpress plugins use strings with length information. These"/><Run Text=" parts"/><Run Text=" need to be adjusted when the length of your new domain name differs from the old name."/></TextBlock>
+        <TextBlock Margin="10,99,10,0" TextWrapping="Wrap" 
+                   Text="Version 1.0, by Oliver Abraham, www.oliver-abraham.de, mail@oliver-abraham.de" 
+                   VerticalAlignment="Top" Height="24"/>
+
+
+        <Label Content="Step 1:" HorizontalAlignment="Left" Margin="40,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.538" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Select you Database backup file (sql file)" Margin="127,147,67,0" VerticalAlignment="Top" Height="23" 
+                Name="Button_1" 
+                Click="Button_1_Click"/>
+
+
+        <Label Content="Step 2:" HorizontalAlignment="Left" Margin="40,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.538" FontSize="16" FontWeight="Bold"/>
+        <TextBox Height="23" Margin="127,191,67,0" TextWrapping="Wrap" Text="Enter the old domain name" VerticalAlignment="Top" 
+                IsEnabled="False"
+                Name="TextboxOldDomain" 
+                TextChanged="TextboxOldDomain_TextChanged"/>
+
+
+        <Label Content="Original data:" HorizontalAlignment="Left" Margin="40,233,0,0" VerticalAlignment="Top" />
+        <ListBox Name="ListboxRegex" Margin="127,233,67,248"/>
+
+
+        <Label Content="Step 3:" HorizontalAlignment="Left" Margin="40,0,0,202" VerticalAlignment="Bottom" RenderTransformOrigin="0.316,-0.538" FontSize="16" FontWeight="Bold"/>
+        <TextBox Height="23" Margin="127,0,67,205" TextWrapping="Wrap" Text="Enter the new domain name" VerticalAlignment="Bottom"
+                IsEnabled="False"
+                Name="TextboxNewDomain"
+                TextChanged="TextboxNewDomain_TextChanged" />
+
+
+        <Label Content="Changes:" HorizontalAlignment="Left" Margin="40,0,0,164" VerticalAlignment="Bottom" />
+        <ListBox x:Name="ListboxRegex2" Margin="127,0,67,64" Height="126" VerticalAlignment="Bottom"/>
+
+
+        <Label Content="Step 4:" HorizontalAlignment="Left" Margin="40,0,0,17" VerticalAlignment="Bottom" RenderTransformOrigin="0.316,-0.538" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Save changed file" Margin="127,0,67,20" 
+                IsEnabled="False"
+                Name="Button_2" 
+                Click="Button_2_Click" Height="23" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

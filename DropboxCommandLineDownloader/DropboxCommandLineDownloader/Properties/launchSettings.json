@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DropboxCommandLineDownloader": {
+      "commandName": "Project",
+      "commandLineArgs": "Apps/InpsydeBackWPup   C:\\Test"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ChecksumFiles" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DirectoryPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\server1\archiv\Studio\_Duo\Songvorschläge\2013</Value>
+    </Setting>
+    <Setting Name="SmtpServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.strato.de</Value>
+    </Setting>
+    <Setting Name="NotificationFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail@oliver-abraham.de</Value>
+    </Setting>
+    <Setting Name="NotificationTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail@oliver-abraham.de</Value>
+    </Setting>
+    <Setting Name="NotificationTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Wöchentlicher Archivreport - </Value>
+    </Setting>
+    <Setting Name="SmtpPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="SmtpUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail@oliver-abraham.de</Value>
+    </Setting>
+    <Setting Name="SmtpPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">marion208~</Value>
+    </Setting>
+    <Setting Name="SmtpEnableSSL" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IncludeFileListsInEmail" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GenerateFileLists" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SmtpTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=server1;User Id=root;password=marion207~;Persist Security Info=True;database=DRMC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

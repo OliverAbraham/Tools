@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testdaten", "Testdaten", "{CED73230-193B-48BD-994E-72DA173512DD}"
+	ProjectSection(SolutionItems) = preProject
+		Testdaten1.cs = Testdaten1.cs
+		Testdaten2.cs = Testdaten2.cs
+		Testdaten3.cs = Testdaten3.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{BAE346A0-6175-4013-8DF1-70A864B4788E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abraham.CodeFormatter", "Abraham.CodeFormatter\Abraham.CodeFormatter.csproj", "{48A61AFA-4D5F-4BAA-A9AD-FFBFE6A6E194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFormatterUI", "UI\CodeFormatterUI.csproj", "{74246B71-A5A6-4A46-837C-B6185E63FFB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE346A0-6175-4013-8DF1-70A864B4788E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE346A0-6175-4013-8DF1-70A864B4788E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE346A0-6175-4013-8DF1-70A864B4788E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE346A0-6175-4013-8DF1-70A864B4788E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A61AFA-4D5F-4BAA-A9AD-FFBFE6A6E194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A61AFA-4D5F-4BAA-A9AD-FFBFE6A6E194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A61AFA-4D5F-4BAA-A9AD-FFBFE6A6E194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A61AFA-4D5F-4BAA-A9AD-FFBFE6A6E194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74246B71-A5A6-4A46-837C-B6185E63FFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74246B71-A5A6-4A46-837C-B6185E63FFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74246B71-A5A6-4A46-837C-B6185E63FFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74246B71-A5A6-4A46-837C-B6185E63FFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82F77D69-6F6D-4732-9CA7-1C9AA3C78787}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UnitTests\\UnitTests.csproj
+		SccProjectName1 = UnitTests
+		SccLocalPath1 = UnitTests
+		SccProjectUniqueName2 = Abraham.CodeFormatter\\Abraham.CodeFormatter.csproj
+		SccProjectName2 = Abraham.CodeFormatter
+		SccLocalPath2 = Abraham.CodeFormatter
+		SccProjectUniqueName3 = UI\\CodeFormatterUI.csproj
+		SccProjectName3 = UI
+		SccLocalPath3 = UI
+	EndGlobalSection
+EndGlobal

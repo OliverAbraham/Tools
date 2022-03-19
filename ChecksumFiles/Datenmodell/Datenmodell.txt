@@ -1,0 +1,38 @@
+-- ------------------------------------------------------
+-- ARCHIVÜBERWACHUNG   DATENMODELL
+-- ------------------------------------------------------
+
+CREATE DATABASE IF NOT EXISTS drmc;
+USE drmc;
+
+
+DROP TABLE IF EXISTS `checksum`;
+CREATE TABLE `checksum` 
+(
+  `ID`          int(10) unsigned      NOT NULL AUTO_INCREMENT,
+  `FILEPATH`    varchar(255)          NOT NULL,
+  `FILENAME`    varchar(255) DEFAULT  NULL,
+  `SHA256`      varchar(64)           NOT NULL,
+  `MOD_DATE`    timestamp             NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DELETED`     char(1)               NOT NULL DEFAULT 'N',
+  `REPORTED`    char(1)               NOT NULL DEFAULT 'N',
+
+  PRIMARY KEY (`ID`),
+  KEY `IDX_SHA256`   (`SHA256`),
+  KEY `IDX_FILEPATH` (`FILEPATH`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=635 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `changes`;
+CREATE TABLE `changes` 
+(
+  `ID`          int(10) unsigned      NOT NULL,
+  `MOD_DATE`    timestamp             NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `ACTION`	varchar(1000)         NOT NULL,
+
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=635 DEFAULT CHARSET=utf8;
+
+
+
