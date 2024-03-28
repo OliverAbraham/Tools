@@ -44,7 +44,7 @@ namespace DeleteOldFiles
 			Console.WriteLine($"Delete file that are older than: {_options.OlderThanDays} days");
 
 
-			var files = Directory.GetFiles(dir, name);
+			var files = Directory.GetFiles(dir, name, SearchOption.TopDirectoryOnly);
 
 
 			Console.WriteLine($"\nFound the following files:");
